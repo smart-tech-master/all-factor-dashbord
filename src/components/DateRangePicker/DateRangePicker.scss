@@ -1,0 +1,30 @@
+.drp-relative {
+  position: relative;
+}
+
+.drp-box {
+  z-index: 100;
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  background: #ffffff;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  .rdrDefinedRangesWrapper {
+    display: none;
+  }
+
+  .rdrDayNumber{
+    font-size: 1.3em;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 25px;
+  }
+}

@@ -1,0 +1,12 @@
+.u-border-right {
+  border-right: 1px !important;
+  &-none {
+    border-right: 0 !important;
+  }
+}
+.u-border-left {
+  border-left: 1px !important;
+  &-none {
+    border-left: 0 !important;
+  }
+}

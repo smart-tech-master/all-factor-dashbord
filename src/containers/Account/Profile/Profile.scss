@@ -1,0 +1,16 @@
+.account-profile {
+  hr {
+    border: 1px solid #dee1ec;
+    border-bottom: none;
+    margin: 20px 0;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+  .account-profile-company,
+  .account-profile-admin {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

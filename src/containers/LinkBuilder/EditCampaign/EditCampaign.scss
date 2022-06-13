@@ -1,0 +1,71 @@
+.ReactModal__Content {
+  padding: 0 !important;
+  border-radius: 8px !important;
+  border: 1px solid #dfe0eb !important;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.modal {
+  &-header,
+  &-body,
+  &-footer {
+    padding: 20px 35px;
+  }
+
+  &-body {
+    border-top: solid 1px #dfe0eb;
+    border-bottom: solid 1px #dfe0eb;
+    padding-bottom: 35px;
+
+    .container-width--half {
+      width: 50%;
+    }
+
+    .input-group--special {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      input {
+        flex-grow: 1;
+      }
+    }
+
+    .attribution-parameters {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+
+      & > div {
+        margin-right: 20px;
+      }
+    }
+
+    .checkbox-group {
+      margin-top: auto;
+
+      @media only screen and (max-width: 1356px) {
+        margin-top: 15px;
+      }
+
+      label {
+        margin-left: 5px;
+      }
+      margin-bottom: 10px;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    &--buttons {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      .button-margin--right {
+        margin-right: 30px;
+      }
+    }
+  }
+}

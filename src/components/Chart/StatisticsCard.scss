@@ -1,0 +1,21 @@
+.chart-right-card {
+  text-align: center;
+  padding: 21px;
+
+  border-left: 1px solid #dee1ec;
+  border-top: 1px solid #dee1ec;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &-title {
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #7b84a4;
+  }
+}

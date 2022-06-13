@@ -1,0 +1,44 @@
+.subscription-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &-plan {
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #4a4f62;
+  }
+  &-price {
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 24px;
+
+    color: #4a4f62;
+  }
+  &-type {
+    font-family: Gelion;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #4a4f62;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      margin: 5px 0;
+    }
+    opacity: 0.6;
+  }
+  &-button {
+    width: 100%;
+  }
+}

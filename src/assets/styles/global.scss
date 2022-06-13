@@ -1,0 +1,120 @@
+@import-normalize;
+@import './fonts.scss';
+@import './settings.spacing.scss';
+@import './utils.flex.scss';
+@import './utils.spacing.scss';
+@import './utils.text-align.scss';
+@import './utils.border.scss';
+@import './utils.font-weight.scss';
+@import './utils.visibility.scss';
+@import './utils.column.scss';
+@import './mixins.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gelion', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'Gelion', sans-serif;
+  font-size: 14px;
+  color: #979797;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Gelion', sans-serif;
+  font-size: 14px;
+  color: #979797;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Gelion', sans-serif;
+  font-size: 14px;
+  color: #979797;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Gelion', sans-serif;
+  font-size: 14px;
+  color: #979797;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.mouse-pointer {
+  cursor: pointer;
+}
+
+.cell-page-title,
+.cell-page-url {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cell-page-title {
+  color: #4a4f62;
+}
+
+.cell-page-url {
+  color: #7f87a0;
+}
+
+.c-table__main {
+  overflow-x: auto;
+  border-right: none;
+
+  table {
+    width: 100%;
+  }
+
+  /* width */
+  &::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 2px 2px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #7b84a4;
+  }
+
+  /* Handle on hover */
+  // &::-webkit-scrollbar-thumb:hover {
+  // }
+}
+
+// react toastify
+.Toastify__toast-body {
+  padding-left: 16px !important;
+}
+
+.Toastify__toast--info {
+  background-color: #598cff;
+}

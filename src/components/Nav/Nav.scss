@@ -1,0 +1,71 @@
+.c-nav {
+  position: fixed;
+  width: 255px;
+  min-height: 100%;
+  padding-bottom: 27px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #626a8b;
+
+  &__logo {
+    margin: 0 0 7px;
+    padding: 20px;
+    font-size: 0;
+  }
+
+  &__list {
+    margin: 0 0 90px;
+    padding: 0;
+    list-style: none;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    & li {
+      display: block;
+    }
+  }
+
+  .react-select {
+    &-container {
+      width: 220px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    &__control {
+      border-radius: 8px;
+    }
+  }
+
+  &__primary-link,
+  &__secondary-link {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 22px 26px;
+    color: #eaecf9;
+    text-decoration: none;
+
+    transition: 350ms ease;
+
+    & .nav-icons {
+      margin: 0 30px 0 0;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__secondary-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  &-active {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+}

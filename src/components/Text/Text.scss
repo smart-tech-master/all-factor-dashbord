@@ -1,0 +1,80 @@
+.c-text {
+  margin: 0;
+  line-height: 1.25;
+
+  // display options
+  &--display-block {
+    display: block;
+  }
+
+  &--display-inline {
+    display: inline;
+  }
+
+  // font-weight options
+  &--font-weight-light {
+    font-weight: 300;
+  }
+
+  &--font-weight-regular {
+    font-weight: 400;
+  }
+
+  &--font-weight-medium {
+    font-weight: 500;
+  }
+
+  &--font-weight-bold {
+    font-weight: 700;
+  }
+
+  // align options
+  &--align-start {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-end {
+    text-align: right;
+  }
+
+  &--align-fill {
+    text-align: justify;
+  }
+
+  // color options
+  &--color-default {
+    color: #252733;
+  }
+
+  &--color-inputLabel {
+    color: #4a4f62;
+  }
+
+  &--color-primary {
+    color: #585d70;
+  }
+
+  &--color-secondary {
+    color: #757a8e;
+  }
+
+  &--color-light {
+    color: rgba(111, 123, 166, 0.59);
+  }
+
+  &--color-gray {
+    color: #9fa2b4;
+  }
+
+  &--color-green {
+    color: #66e287;
+  }
+
+  &--color-orange {
+    color: #ff774d;
+  }
+}

@@ -1,0 +1,19 @@
+.border-none {
+  border: none !important;
+}
+
+.modal-header-modifier {
+  padding: 30px 35px 20px;
+
+  &-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #585d70;
+  }
+}
+
+.modal-body-modifier {
+  padding: 0px 35px;
+}

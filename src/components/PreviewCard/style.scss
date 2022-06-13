@@ -1,0 +1,118 @@
+@import '../../assets/styles/mixins.scss';
+
+.card {
+  background: #ffffff;
+
+  border: 1px solid #dee1ec;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+
+  margin: 5px 0;
+  padding: 16px;
+
+  &-title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #598cff;
+      margin-left: 5px;
+    }
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+
+    &-name {
+      font-family: Gelion;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      /* identical to box height, or 147% */
+
+      display: flex;
+      align-items: center;
+
+      color: #4a4f62;
+    }
+
+    &-value {
+      font-family: Gelion;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-high {
+      color: #66e287;
+    }
+
+    &-low {
+      color: #ff774d;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      border-bottom: 1px solid #dee1ec;
+    }
+    tr:last-child {
+      border-bottom: none;
+    }
+    td {
+      padding: 12px 0;
+      font-size: 15px;
+      line-height: 22px;
+      color: #757a8e;
+    }
+    .number {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #66e287;
+      text-align: right;
+    }
+    .first-item {
+      font-weight: 500;
+    }
+
+    .top-links-no-data {
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      font-size: 20px;
+      line-height: 24px;
+      color: #585d70;
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 24px;
+        color: #598cff;
+      }
+    }
+  }
+
+  hr {
+    border-bottom: 1px solid #dee1ec;
+    border-top: 0px;
+  }
+
+  @include monitorAndDown {
+    width: 320px;
+  }
+
+  @include wideDesktopAndDown {
+    width: 280px;
+  }
+}

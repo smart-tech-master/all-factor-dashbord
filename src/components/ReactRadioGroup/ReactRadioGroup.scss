@@ -1,0 +1,73 @@
+@import '../../assets/styles/mixins.scss';
+
+.c-radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  & label {
+    flex-shrink: 0;
+    min-width: 110px;
+
+    @include wideDesktopAndDown {
+      min-width: 80px;
+    }
+
+    text-align: center;
+    color: #3b3f50;
+    cursor: pointer;
+
+    &:first-child span {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-left: 1px solid #dfe0eb;
+    }
+
+    &:last-child span {
+      margin-right: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-right: 1px solid #dfe0eb;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    & span {
+      position: relative;
+      display: block;
+      margin-right: 1px;
+      padding: 5px 15px;
+
+      font-size: 15px;
+      line-height: 22px;
+      transition: 250ms ease;
+      border-top: 1px solid #dfe0eb;
+      border-bottom: 1px solid #dfe0eb;
+
+      &:focus,
+      &:hover {
+        background-color: #dfe0eb;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        display: block;
+        width: 1px;
+        background-color: #dfe0eb;
+      }
+    }
+
+    & .iradio.checked + span {
+      color: #ffffff;
+      text-shadow: 0 0 1px #ffffff;
+      background: #7b84a4;
+      border-color: #7b84a4;
+    }
+  }
+}

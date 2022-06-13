@@ -1,0 +1,48 @@
+.subscription {
+  hr {
+    border: 1px solid #dee1ec;
+    border-bottom: none;
+    margin: 20px 0;
+  }
+  &-item {
+    margin-right: 30px;
+    &-key {
+      font-family: Gelion;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7f87a0;
+    }
+    &-value {
+      font-family: Gelion;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4a4f62;
+    }
+  }
+
+  &-month-and-year {
+    display: flex;
+    justify-content: center;
+    label {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+
+      color: #252733;
+    }
+
+    &-year {
+      display: flex;
+    }
+  }
+
+  &-plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

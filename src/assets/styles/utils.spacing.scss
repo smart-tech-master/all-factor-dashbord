@@ -1,0 +1,17 @@
+@each $name, $value in $spacing-values {
+  @each $property in $spacing-properties {
+    @each $directions in $spacing-directions {
+      .u-#{$property}-#{$directions}-#{$name} {
+        #{$property}-#{$directions}: #{$value};
+      }
+    }
+  }
+}
+
+@each $name, $value in $spacing-values {
+  @each $property in $spacing-properties {
+    .u-#{$property}-#{$name} {
+      #{$property}: #{$value};
+    }
+  }
+}

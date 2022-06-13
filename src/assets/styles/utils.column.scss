@@ -1,0 +1,5 @@
+@for $i from 1 through 12 {
+  .col-default-#{$i} {
+    width: #{$i / 12 * 100%};
+  }
+}

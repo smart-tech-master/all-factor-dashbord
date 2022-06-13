@@ -1,0 +1,62 @@
+.nivo-chart-tooltip {
+  // position: absolute;
+  // padding: 30px;
+  // background: #ffffff;
+  // border: 1px solid #dfe0eb;
+  // box-sizing: border-box;
+  // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  // border-radius: 8px;
+  // min-width: '400px';
+  // z-index: 102;
+
+  hr {
+    border: 1px solid #dee1ec;
+    margin-bottom: 2px;
+  }
+
+  &-header {
+    &-title,
+    &-content {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #4a4f62;
+    }
+
+    &-content {
+      font-weight: normal;
+    }
+  }
+  &-body {
+    &-block {
+      padding-top: 8px;
+    }
+
+    &-title,
+    &-content {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #4a4f62;
+
+      &-detail {
+        display: flex;
+
+        &-num {
+          line-height: 16px;
+          min-width: 15px;
+        }
+
+        &-text {
+          padding-left: 15px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    &-content {
+      font-weight: normal;
+    }
+
+  }
+}

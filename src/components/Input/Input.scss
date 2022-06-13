@@ -1,0 +1,23 @@
+.input-with--label {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    padding: 10px 0;
+  }
+
+  input {
+  }
+}
+
+.input-radio {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  label {
+    margin-left: 8px;
+  }
+
+  input {
+  }
+}

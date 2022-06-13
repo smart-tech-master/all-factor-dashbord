@@ -1,0 +1,26 @@
+.chart {
+  background: #ffffff;
+  border: 1px solid #dee1ec;
+  border-radius: 8px;
+  display: flex;
+
+  &-chart {
+    width: calc(100vw - 255px - 230px);
+    height: 450px;
+    position: relative;
+
+    &-month {
+      position: absolute;
+      left: 10px;
+      bottom: 13px;
+
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 23px;
+      color: #4a4f62;
+    }
+  }
+  &-remove-statistics {
+    width: calc(100vw - 255px - 80px);
+  }
+}

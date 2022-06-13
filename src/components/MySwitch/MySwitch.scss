@@ -1,0 +1,24 @@
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
+  border: 1px solid #7b84a4;
+
+  &-icon-on,
+  &-icon-off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 2;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    color: #7b84a4;
+  }
+
+  &-icon-on {
+    color: #fff;
+  }
+}

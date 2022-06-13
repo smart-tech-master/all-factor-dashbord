@@ -1,0 +1,50 @@
+@import '../../assets/styles/mixins.scss';
+
+.c-actions-bar {
+  max-width: calc(100vw - 255px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -30px 40px;
+  padding: 16px 30px;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+
+  &_no_background {
+    background: none;
+    box-shadow: none;
+  }
+  &_no_bottom_margin {
+    margin-bottom: 0px !important;
+  }
+
+  &__item {
+    flex-shrink: 0;
+
+    &:first-child:last-child {
+      margin-left: auto;
+    }
+  }
+
+  &_align_left {
+    margin-left: initial !important;
+  }
+
+  &_text_align_right {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  @include monitorAndDown {
+    flex-wrap: wrap;
+  }
+}
+
+.c-actions-bar-preview-card {
+  flex-wrap: wrap;
+}
+
+.c-actions-preview-card {
+  width: 49%;
+}

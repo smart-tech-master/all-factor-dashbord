@@ -1,0 +1,162 @@
+// variables
+
+// default theme
+$default-blue: #598cff;
+$default-black: #4a4f62;
+$default-grey: #9096a9;
+$default-light-grey: #f7f8fc;
+$default-white: #ffffff;
+
+// global styles
+h1 {
+  font-family: Gelion;
+  font-style: normal;
+  text-align: center;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 27px;
+  letter-spacing: 0.1px;
+  color: $default-black;
+}
+
+a {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input {
+  padding: 11px 14px;
+  vertical-align: middle;
+  border: solid 1px rgba(147, 148, 170, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input::-webkit-input-placeholder {
+  color: $default-black;
+}
+
+// utils
+.logo {
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-base {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $default-light-grey;
+
+  .dashboard-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.input-container {
+  label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+  }
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  padding: 13px;
+  text-align: center;
+  min-width: 160px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  -webkit-appearance: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &-default {
+    color: $default-white;
+    background-color: $default-blue;
+
+    &:hover {
+      background-color: lighten($default-blue, 5%);
+    }
+  }
+}
+
+// styles from just these elements
+.auth-base {
+  border-radius: 8px;
+  background-color: $default-white;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  width: 500px;
+  padding: 32px;
+  align-self: center;
+
+  .header-icon {
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .urls-container {
+    margin: 20px 0 40px;
+    text-align: center;
+
+    a {
+      color: $default-blue;
+    }
+  }
+
+  .forgot-password {
+    margin: 32px 0 0;
+    a {
+      color: $default-black;
+    }
+  }
+
+  .input-container {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .feedback {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

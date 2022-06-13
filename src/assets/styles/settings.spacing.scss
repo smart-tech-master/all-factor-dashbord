@@ -1,0 +1,13 @@
+$spacing-values: (
+  'xsmall': '5px',
+  'small': '10px',
+  'medium': '15px',
+  'large': '25px',
+  'xlarge': '30px',
+  'xxlarge': '40px',
+  'xxxlarge': '50px',
+);
+
+$spacing-properties: ('padding', 'margin');
+
+$spacing-directions: ('top', 'right', 'bottom', 'left');

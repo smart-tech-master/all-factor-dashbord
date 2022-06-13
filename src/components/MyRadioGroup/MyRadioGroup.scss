@@ -1,0 +1,57 @@
+body {
+  margin-top: 2rem;
+}
+.radioPad {
+  display: inline-block;
+  min-width: 112px;
+  vertical-align: middle;
+
+  &:first-child label {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid #dfe0eb;
+  }
+
+  &:last-child label {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid #dfe0eb;
+  }
+}
+@media (min-width: 440px) {
+  .radioPad {
+    // width: 50%;
+  }
+}
+@media (min-width: 560px) {
+  .radioPad {
+    // width: 33.333333333333336%;
+  }
+}
+.radioPad__wrapper {
+  display: block;
+  cursor: pointer;
+  background: #fff;
+  color: #4a4f62;
+  font-size: 15px;
+  padding: 8px 10px;
+  text-align: center;
+  border: 1px solid #dfe0eb;
+  border-right: none;
+}
+
+.radioPad__wrapper:active,
+.radioPad__wrapper--selected {
+  background: #7b84a4 !important;
+  border-color: #7b84a4;
+  color: #ffffff;
+}
+.radioPad__wrapper:hover {
+  background: #dfe0eb;
+}
+.radioPad__radio {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}

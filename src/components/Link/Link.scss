@@ -1,0 +1,15 @@
+.c-link {
+  &-view-more,
+  &-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #598cff;
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

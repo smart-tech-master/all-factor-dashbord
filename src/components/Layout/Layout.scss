@@ -1,0 +1,21 @@
+.c-layout {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+
+  &__sidebar {
+    position: relative;
+    flex: 0 0 255px;
+  }
+
+  &__main {
+    max-width: calc(100% - 255px);
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 30px;
+    background: #f7f8fc;
+  }
+}

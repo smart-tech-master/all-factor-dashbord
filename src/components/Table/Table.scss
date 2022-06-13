@@ -1,0 +1,105 @@
+.c-table {
+  margin: 0 0 50px;
+
+  &__header {
+    margin: 0 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    span.date-range {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #4a4f62;
+    }
+
+    & .c-link {
+      margin: 0 0 0 8px;
+    }
+
+    .link-data {
+      display: flex;
+      flex-direction: column;
+
+      &--item {
+        display: flex;
+        margin: 5px 0;
+
+        .key {
+          font-weight: 500;
+          font-size: 18px;
+          color: #585d70;
+        }
+
+        .value {
+          margin-left: 5px;
+          font-weight: 400;
+          font-size: 18px;
+          color: #585d70;
+        }
+      }
+    }
+  }
+
+  &__main {
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid #dfe0eb;
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    width: calc(100% + 2px);
+    margin: -1px;
+    border-collapse: collapse;
+    border-radius: 8px;
+  }
+
+  thead tr {
+    &:first-child th {
+      border-top: 1px solid #dfe0eb;
+    }
+    &:last-child th {
+      border-bottom: 1px solid #dfe0eb;
+    }
+
+    &:not(:last-child) th {
+      font-weight: 700;
+    }
+  }
+
+  thead th {
+    border-left: 1px solid #dfe0eb;
+    border-right: 1px solid #dfe0eb;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #757a8e;
+  }
+
+  td {
+    border: 1px solid #dfe0eb;
+    padding: 18px 22px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252733;
+  }
+
+  &__button {
+    margin-left: auto;
+
+    &-connected {
+      color: #4a4f62;
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

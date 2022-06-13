@@ -1,0 +1,10 @@
+.table_cell-border {
+    &both--none {
+        border-top: initial !important;
+        border-bottom: initial !important;
+    }
+
+    &bottom--none {
+        border-bottom: initial !important;
+    }
+}

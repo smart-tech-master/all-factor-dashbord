@@ -1,0 +1,21 @@
+.c-progress {
+  &__bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 1px;
+    background: rgba(159, 162, 180, 0.35);
+    border-radius: 20px;
+  }
+
+  &__bar-value {
+    display: block;
+    height: 4px;
+    background: #66e287;
+    border-radius: 20px;
+
+    &-low {
+      background: #ff774d;
+    }
+  }
+}
