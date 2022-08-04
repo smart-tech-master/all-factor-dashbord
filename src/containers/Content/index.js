@@ -27,12 +27,12 @@ export default function Content() {
   // for active radio button
   // const [activeRoute, setActiveRoute] = React.useState(`${match.url}/blog`);
 
-  const handleRadioChange = (event, value) => {
-    if (value) {
-      history.push(value);
-      setActiveRoute(value);
-    }
-  };
+  // const handleRadioChange = (event, value) => {
+  //   if (value) {
+  //     history.push(value);
+  //     setActiveRoute(value);
+  //   }
+  // };
 
   const handleFilterChange = (e) => {
     setFilter(e.target.value)
