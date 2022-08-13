@@ -22,7 +22,7 @@ export default function Content() {
   const hosts = useSelector((state) => state.Feature.hosts);
   const [filter, setFilter] = React.useState('');
   
-  const filter = useSelector((state) => state.Feature.filter);
+  // const filter = useSelector((state) => state.Feature.filter);
 
   // for active radio button
   // const [activeRoute, setActiveRoute] = React.useState(`${match.url}/blog`);
